@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class SoftButton extends StatelessWidget {
+class PlayPauseButton extends StatelessWidget {
   final icon;
 
-  SoftButton({this.icon});
+  PlayPauseButton({this.icon});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 40,
+      height: 60,
+      width: 60,
       child: icon,
       decoration: BoxDecoration(
         color: Theme.of(context).backgroundColor,
