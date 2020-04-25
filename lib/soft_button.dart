@@ -8,11 +8,9 @@ class SoftButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
-      width: 50,
-      child: Icon(
-        icon,
-      ),
+      height: 40,
+      width: 40,
+      child: icon,
       decoration: BoxDecoration(
           color: Theme.of(context).backgroundColor,
           borderRadius: BorderRadius.all(Radius.circular(50)),

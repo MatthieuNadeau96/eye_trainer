@@ -12,6 +12,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xff618D7B),
         backgroundColor: Color(0xffF2F4EE),
+        textTheme: TextTheme(
+          headline: TextStyle(
+            color: Color(0xff0D1710),
+            fontSize: 30,
+            fontWeight: FontWeight.w300,
+          ),
+        ),
       ),
       home: MyHomePage(),
     );
@@ -34,12 +41,24 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              SoftButton(),
-              Text('Pomodoro',
-                  style: TextStyle(
-                    fontSize: 26,
-                  )),
-              SoftButton(),
+              SoftButton(
+                icon: Icon(
+                  Icons.volume_off,
+                  color: Color(0xff0D1710),
+                  size: 20,
+                ),
+              ),
+              Text(
+                'Pomodoro',
+                style: Theme.of(context).textTheme.headline,
+              ),
+              SoftButton(
+                icon: Icon(
+                  Icons.notifications_active,
+                  color: Color(0xff0D1710),
+                  size: 20,
+                ),
+              ),
             ],
           )
         ],
