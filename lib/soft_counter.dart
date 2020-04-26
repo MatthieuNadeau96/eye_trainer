@@ -11,13 +11,13 @@ class SoftCounter extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(50)),
         boxShadow: [
           BoxShadow(
-            color: Color(0xffDADCD6), // up one
+            color: Color(0xffDADCD6),
             offset: Offset(2.0, 2.0),
             blurRadius: 2.0,
             spreadRadius: 1.0,
           ),
           BoxShadow(
-            color: Color(0xffffffff), // down one
+            color: Color(0xffffffff),
             offset: Offset(-2.0, -2.0),
             blurRadius: 2.0,
             spreadRadius: 1.0,

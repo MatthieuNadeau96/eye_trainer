@@ -16,15 +16,15 @@ class SoftButton extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(50)),
         boxShadow: [
           BoxShadow(
-            color: Color(0xffDADCD6), // up one
-            offset: Offset(4.0, 4.0),
-            blurRadius: 5.0,
+            color: Color(0xffDADCD6),
+            offset: Offset(6.0, 6.0),
+            blurRadius: 10.0,
             spreadRadius: 1.0,
           ),
           BoxShadow(
-            color: Color(0xffffffff), // down one
-            offset: Offset(-4.0, -4.0),
-            blurRadius: 5.0,
+            color: Color(0xffffffff),
+            offset: Offset(-6.0, -6.0),
+            blurRadius: 10.0,
             spreadRadius: 1.0,
           ),
         ],
